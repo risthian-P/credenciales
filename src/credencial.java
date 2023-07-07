@@ -1,6 +1,8 @@
 import javax.swing.*;
 
 public class credencial {
+
+    //ventana
     private JTextField name;
     private JTextField cedula;
     private JTextField edad;
@@ -8,6 +10,11 @@ public class credencial {
     private JPanel roolPanel;
     private JButton cargar;
 
+    //Archivos
+    String file = "credenciales_datos.dat"
+
+
+    //generation main, necesita tener un JPanel
     public static void main(String[] args) {
         JFrame frame = new JFrame("credencial");
         frame.setContentPane(new credencial().roolPanel);
@@ -16,4 +23,8 @@ public class credencial {
         frame.setVisible(true);
     }
 
+    public credencial (){
+
+    }
 }
+
